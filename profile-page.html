@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-styles/typography.html">
+<link rel="import" href="../polymer/polymer.html">
+<!--
+  `<profile-page></profile-page>` profile-page
+  @demo demo.html
+-->
+<dom-module id="profile-page">
+  <template>
+    <style>
+      :host {
+        display:block;
+        background:#df00de;
+        color:#fff;
+        height:700px;
+        padding:20px;
+        font-family: 'Roboto', 'Noto', sans-serif;
+      }
+    </style>
+    <h2>Owner</h2>
+    <h3>[[name]]</h3>
+    <h2>Created</h2>
+    <h3>[[date]]</h3>
+    <br />
+    <h4>[[dist]]</h4>
+    
+    <h2>Followers</h2>
+    
+    
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "profile-page",
+  })
+</script>
